@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "signika-light";
+  src: url(./Assets/fonts/Signika-Light.ttf);
+}
+
+@font-face {
+  font-family: "signika-medium";
+  src: url(./Assets/fonts/Signika-Medium.ttf);
+}
+
+@font-face {
+  font-family: "signika-bold";
+  src: url(./Assets/fonts/Signika-Bold.ttf);
+}
+
+:root {
+  --font-light: "signika-light";
+  --font-medium: "signika-medium";
+  --font-bold: "signika-bold";
+}
+
+.h1 {
+  font-family: var(--font-light);
+}
+.h2 {
+  font-family: var(--font-medium);
+}
+.h3 {
+  font-family: var(--font-bold);
+}
