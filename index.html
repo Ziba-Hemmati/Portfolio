@@ -28,6 +28,65 @@
         </div>
 
     </div>
+
+    <!-- -----About Me----- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Assets/images/globe.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">About Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex totam debitis reprehenderit velit
+                        doloremque explicabo libero incidunt consequatur ducimus temporibus. Similique aliquid, minus
+                        suscipit veritatis dignissimos qui accusantium odio maxime?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App interface</li>
+                            <li><span>Web development</span> <br> Web app development </li>
+                            <li><span>App development</span> <br> Buliding android/ios apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App interface</li>
+                            <li><span>Web development</span> <br> Web app development </li>
+                            <li><span>App development</span> <br> Buliding android/ios apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App interface</li>
+                            <li><span>Web development</span> <br> Web app development </li>
+                            <li><span>App development</span> <br> Buliding android/ios apps </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link")
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+    </script>
 </body>
 
 </html>
