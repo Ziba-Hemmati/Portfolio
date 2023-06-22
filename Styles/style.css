@@ -115,6 +115,9 @@ nav ul .fas {
   font-family: var(--font-signika-light);
   font-size: 1rem;
 }
+.sub-title {
+  font-size: 2rem;
+}
 .about__text p {
   margin-top: 10px;
   line-height: 26px;
@@ -312,6 +315,9 @@ form .btn2 {
   .contact-right {
     flex-basis: 100%;
   }
+  .sub-title {
+    font-size: 2.2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -375,5 +381,8 @@ form .btn2 {
   .contact-left,
   .contact-right {
     flex-basis: 50%;
+  }
+  .sub-title {
+    font-size: 2.4rem;
   }
 }
