@@ -14,17 +14,17 @@ a {
 
 @font-face {
   font-family: "signika-light";
-  src: url(./Assets/fonts/Signika-Light.ttf);
+  src: url(../Assets/fonts/Signika-Light.ttf);
 }
 
 @font-face {
   font-family: "signika-medium";
-  src: url(./Assets/fonts/Signika-Medium.ttf);
+  src: url(../Assets/fonts/Signika-Medium.ttf);
 }
 
 @font-face {
   font-family: "signika-bold";
-  src: url(./Assets/fonts/Signika-Bold.ttf);
+  src: url(../Assets/fonts/Signika-Bold.ttf);
 }
 
 :root {
@@ -44,7 +44,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(./Assets/images/bc.jpg);
+  background-image: url(../Assets/images/bc.jpg);
   background-size: cover;
   background-position: center;
 }
