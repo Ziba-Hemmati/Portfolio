@@ -1,177 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="shortcut icon" href="./Assets/images/logo.png">
-    <link rel="stylesheet" href="./Styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="shortcut icon" href="./Assets/images/logo.png" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <h1 class="logo-text">Ziba.</h1>
-                <ul id="sideMenu" class="new">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark fas" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars fas" onclick="openMenu()"></i>
-            </nav>
-            <div class="new-nav">
-                <h1 class="logo-text">Ziba</h1>
+      <div class="container">
+        <nav>
+          <h1 class="logo-text">Ziba.</h1>
+          <ul id="sideMenu" class="new">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fas" onclick="openMenu()"></i>
+        </nav>
+        <div class="new-nav">
+          <h1 class="logo-text">Ziba</h1>
 
-                <ul class="new">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="header-text">
-                <p>Front-End Developer</p>
-                <h2>Hey, <br class="header-text__br"> I'm Ziba Hemmati</h2>
-            </div>
+          <ul class="new">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h2>
+            Hey, <br class="header-text__br" />
+            I'm Ziba Hemmati
+          </h2>
+        </div>
+      </div>
     </div>
 
     <!-- ------about me------ -->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about__text">
-                    <h3 class="sub-title">About Me</h3>
-                    <p>My name is Ziba Hemmati. I am a computer engineering student with a focus on software. I have
-                        been pursuing learning programming skills for over a year now. In universities, languages such
-                        as C++, Python, Java, etc. are usually taught. I have brief knowledge of C++ and
-                        Java.Additionally, I have started learning HTML markup language, CSS styling language, Git
-                        version control system, and JavaScript programming language as a self-taught learner.Then, to
-                        complete my programming skills and learn it professionally, I joined a programming bootcamp to
-                        further improve my knowledge.I am always eager to learn and experience new technologies in the
-                        field of technology and computers.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>HTML</span> <br> Hypertext Markup Language, <br> Creating web pages and
-                                applications
-                            </li>
-                            <li><span>CSS</span> <br> Cascading Style Sheets, <br> Describe the presentation of HTML
-                            </li>
-                            <li><span>SASS</span> <br> Syntactically Awesome Style Sheets, <br> CSS preprocessor that
-                                adds
-                                additional functionality and features to traditional CSS </li>
-                            <li><span>Git, GitHub</span> <br> Distributed version control system used for tracking
-                                changes in source code during software development </li>
-                            <li><span>JavaScript</span> <br> A high-level, interpreted programming language that is
-                                commonly used for creating interactive web pages and applications
-                            </li>
-                            <li><span>React</span> <br> A popular open-source JavaScript library used for building user
-                                interfaces (UI) for web applications
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023 - Current</span> <br> Daneshkar bootcamp student</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021 - Current</span> <br> Computer Engineering student at Islamic Azad University
-                            </li>
-                            <li><span>2023 - Current</span> <br> Daneshkar bootcamp student </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about__text">
+            <h3 class="sub-title">About Me</h3>
+            <p>
+              My name is Ziba Hemmati. I am a computer engineering student with
+              a focus on software. I have been pursuing learning programming
+              skills for over a year now. In universities, languages such as
+              C++, Python, Java, etc. are usually taught. I have brief knowledge
+              of C++ and Java.Additionally, I have started learning HTML markup
+              language, CSS styling language, Git version control system, and
+              JavaScript programming language as a self-taught learner.Then, to
+              complete my programming skills and learn it professionally, I
+              joined a programming bootcamp to further improve my knowledge.I am
+              always eager to learn and experience new technologies in the field
+              of technology and computers.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>HTML</span> <br />
+                  Hypertext Markup Language, <br />
+                  Creating web pages and applications
+                </li>
+                <li>
+                  <span>CSS</span> <br />
+                  Cascading Style Sheets, <br />
+                  Describe the presentation of HTML
+                </li>
+                <li>
+                  <span>SASS</span> <br />
+                  Syntactically Awesome Style Sheets, <br />
+                  CSS preprocessor that adds additional functionality and
+                  features to traditional CSS
+                </li>
+                <li>
+                  <span>Tailwind</span> <br />
+                  A utility-first CSS framework packed with classes
+                </li>
+                <li>
+                  <span>Git, GitHub</span> <br />
+                  Distributed version control system used for tracking changes
+                  in source code during software development
+                </li>
+                <li>
+                  <span>JavaScript</span> <br />
+                  A high-level, interpreted programming language that is
+                  commonly used for creating interactive web pages and
+                  applications
+                </li>
+                <li>
+                  <span>React</span> <br />
+                  A popular open-source JavaScript library used for building
+                  user interfaces (UI) for web applications
+                </li>
+                <li>
+                  <span>NextJs</span> <br />
+                  The react framework for the Web
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span> <br />
+                  Daneshkar bootcamp student
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - Current</span> <br />
+                  Computer Engineering student at Islamic Azad University
+                </li>
+                <li>
+                  <span>2023 - Current</span> <br />
+                  Daneshkar bootcamp student
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ------portfolio------ -->
 
     <div id="portfolio">
-        <div class="container">
-            <h2 class="sub-title">My Work</h2>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./Assets/images/work1.png">
-                    <div class="layer">
-                        <h3> Beleasing project </h3>
-                        <p> Group project </p>
-                        <a href="https://github.com/Ziba-Hemmati/BeLeasing-Project" target="_blank"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Assets/images/work2.png">
-                    <div class="layer">
-                        <h3>Azki project</h3>
-                        <p>Project for UI and figma</p>
-                        <a href="https://github.com/Ziba-Hemmati/Azki-Project" target="_blank"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="./Assets/images/work3.png">
-                    <div class="layer">
-                        <h3> Rose project</h3>
-                        <p> The first project of html and css </p>
-                        <a href="https://github.com/Ziba-Hemmati/Rose-Project" target="_blank"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="./Assets/images/work4.png" />
+            <div class="layer">
+              <h3>Filimo project</h3>
+              <p>Group project</p>
+              <a
+                href="https://github.com/Ziba-Hemmati/Filimo-Project"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
-            <a href="https://github.com/Ziba-Hemmati?tab=repositories" class="btn" target="_blank">See More</a>
+          </div>
+          <div class="work">
+            <img src="./Assets/images/work1.png" />
+            <div class="layer">
+              <h3>Beleasing project</h3>
+              <p>Group project</p>
+              <a
+                href="https://github.com/Ziba-Hemmati/BeLeasing-Project"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Assets/images/work2.png" />
+            <div class="layer">
+              <h3>Azki project</h3>
+              <p>Project for UI and figma</p>
+              <a
+                href="https://github.com/Ziba-Hemmati/Azki-Project"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Assets/images/work3.png" />
+            <div class="layer">
+              <h3>Rose project</h3>
+              <p>The first project of html and css</p>
+              <a
+                href="https://github.com/Ziba-Hemmati/Rose-Project"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a
+          href="https://github.com/Ziba-Hemmati?tab=repositories"
+          class="btn"
+          target="_blank"
+          >See More</a
+        >
+      </div>
     </div>
 
     <!-- ------Contact------ -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h2 class="sub-title">Contact Me</h2>
-                    <p><i class="fa-solid fa-paper-plane"></i>devzibahemmati@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>09197146569</p>
-                    <div class="social-icons">
-                        <a href="https://twitter.com/voidOneEven?t=2dwoNu95XMDe-_mYFWmyeQ&s=09" target="_blank"><i
-                                class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://wa.me/qr/OUJNPL4FUOLOF1" target="_blank"><i
-                                class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://msng.link/o?@virgo_88=tg" target="_blank"><i
-                                class="fa-brands fa-telegram"></i></a>
-                    </div>
-                    <a href="./Assets/resume/ZibaHemmati.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>devzibahemmati@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>09197146569</p>
+            <div class="social-icons">
+              <a
+                href="https://twitter.com/voidOneEven?t=2dwoNu95XMDe-_mYFWmyeQ&s=09"
+                target="_blank"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://wa.me/qr/OUJNPL4FUOLOF1" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://msng.link/o?@virgo_88=tg" target="_blank"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
             </div>
+            <a href="./Assets/resume/ZibaHemmati.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="./JS/script.js"></script>
-</body>
-
+  </body>
 </html>
